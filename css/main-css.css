@@ -32,6 +32,8 @@ hr {
 }
 
 #header-info p {
+	cursor: pointer;
+	cursor: hand;
 	font-size: 20px;
 	margin: 5px auto 0;
 	display: inline-block;
@@ -72,6 +74,8 @@ hr {
 }
 
 .resume-section p {
+	cursor: pointer;
+	cursor: hand;
 	font-size: 26px;
 	margin: 5px auto 0;
 	display: inline-block;
