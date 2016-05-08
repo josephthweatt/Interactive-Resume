@@ -1,0 +1,75 @@
+/* Default Background/Body attributes */
+body {
+	background-color: #FDFFFE;
+	text-align: center;
+}
+
+* {
+	font-family: Arial;
+}
+
+hr {
+	transition: margin 1000ms;
+	margin: 2px auto 0;
+	width: 300px;
+}
+
+/* Heading attributes */
+#myName {
+	display: inline-block;
+	margin: 100px auto 0; /* 100px from top, no margin below */
+	width: auto;
+}
+
+#myName p {
+	margin: 0 auto;
+	font-size: 46px;
+}
+
+#contact-info p {
+	font-size: 20px;
+	margin: 5px auto 3px;
+	display: inline-block;
+	border-radius: 20%;
+}
+
+/* Resume Content attributes */
+#resume {
+	transition: margin 1000ms;
+	margin: 0px auto 0;
+}
+
+.resume-section p {
+	font-size: 26px;
+	margin: 5px auto 0;
+	display: inline-block;
+	border-radius: 20%;
+}
+
+/* Appendable Classes */
+.element-shadow {
+	transition: box-shadow 500ms;
+	box-shadow: 0 5px 6px -6px #888888;
+}
+
+.element-shadow-reverse {
+	transition: box-shadow 500ms;
+}
+
+.line-expand {
+	visibility: visible;
+	transition: width 500ms;
+	width: 500px;
+}
+
+.line-retract {
+	visibility: visible;
+	transition: width 500ms;
+	width: 300px;
+}
+
+.ghost-line-retract {
+	transition: width 500ms, visibility 500ms;
+	width: 0px;
+	visibility: hidden;
+}
