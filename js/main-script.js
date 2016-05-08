@@ -15,36 +15,21 @@ $(document).ready(function() {
 	
 	// drop down header info
 	$('#contact').click(function () {
-		if ($('#project-info').is(':visible')) {
-			$(this).hide();
-		}
-		if ($('#contact-info').is(':hidden')) {
-			$(this).css("opacity", "100");
-			$(this).hide().fadeIn(550);
-			$('#resume-header').mouseleave(function () {
-				$('#contact-info').fadeTo(300, 0.00);
-				$('#contact-info').slideUp(200, function () {
-					$(this).hide();
-				});
-			});
-		}
+		$('#contact-info').animate({opacity: 'show', height: 'show'}, 600);
+		$('#myName, #header-info').mouseleave(function () {
+			$('#contact-info').animate({opacity: 'hide', height: 'hide'}, 800);
+		});
 	});
 	
 	$('#project').click(function () {
-		if ($('#contact-info').is(':visible')) {
-			$(this).hide();
-		}
-		if ($('#project-info').is(':hidden')) {
-			$(this).css("opacity", "100");
-			$(this).hide().fadeIn(550);
-			$('#resume-header').mouseleave(function () {
-				$('#project-info').fadeTo(300, 0.00);
-				$('#project-info').slideUp(200, function () {
-					$(this).hide();
-				});
-			});
-		}
+		$('#project-info').animate({opacity: 'show', height: 'show'}, 800);
+		$('#myName, #header-info').mouseleave(function () {
+			$('#project-info').animate({opacity: 'hide', height: 'hide'}, 800);
+		});
 	});
+
+	// resume drop downs
+
 	
 	// make lines expand
 	$('#myName, #header-info').hover(function () {
