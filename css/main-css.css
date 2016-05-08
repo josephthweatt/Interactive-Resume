@@ -26,17 +26,36 @@ hr {
 	font-size: 46px;
 }
 
-#contact-info p {
+#header-info {
+	margin: 0 auto;
+	width: 500px;
+}
+
+#header-info p {
 	font-size: 20px;
-	margin: 5px auto 3px;
+	margin: 5px auto 0;
 	display: inline-block;
 	border-radius: 20%;
+}
+
+#contact-info {
+	margin: 5px auto 0;
+}
+
+#contact-info p {
+	font-size: 16px;
+	display: inline-block;
 }
 
 /* Resume Content attributes */
 #resume {
 	transition: margin 1000ms;
 	margin: 0px auto 0;
+}
+
+.resume-section {
+	margin: 0 auto;
+	width: 500px;
 }
 
 .resume-section p {
@@ -48,12 +67,12 @@ hr {
 
 /* Appendable Classes */
 .element-shadow {
-	transition: box-shadow 500ms;
-	box-shadow: 0 5px 6px -6px #888888;
+	transition: box-shadow 300ms;
+	box-shadow: 0 8px 6px -6px #888888;
 }
 
 .element-shadow-reverse {
-	transition: box-shadow 500ms;
+	transition: box-shadow 300ms;
 }
 
 .line-expand {
