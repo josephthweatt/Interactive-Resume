@@ -82,15 +82,13 @@ hr {
 	border-radius: 20%;
 }
 
-/* Resume section-specific attributes */
-#about-content {
+.resume-content {
 	display: none;
 	visibility: hidden;
 }
 
-#about-content p {
-	font-size: 18px;
-}
+/* Resume section-specific attributes */
+
 
 /* Appendable Classes */
 .element-shadow {

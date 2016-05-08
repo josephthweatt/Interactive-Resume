@@ -45,7 +45,7 @@ $(document).ready(function() {
 	};
 
 	$('#about').click(function () {
-		dropSection($('#about-content'), 800, 800);
+		dropSection($('#about div'), 800, 800);
 	});
 	
 	// make lines expand
