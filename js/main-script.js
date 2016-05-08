@@ -28,8 +28,25 @@ $(document).ready(function() {
 		});
 	});
 
-	// resume drop downs
+	// resume drop downs (will borrow from the dropSection function)
+	var dropSection = function (contentId, dropTime, raiseTime) {
+		contentId.children('hr').removeClass('ghost-line-retract');
+		contentId.children('hr').addClass('line-expand');
+		contentId.css("visibility", "visible");
+		contentId.parent('p').animate({'margin-top': '+=5px'}, dropTime);
+		contentId.animate({opacity: 'show', height: 'show'}, dropTime);
 
+		contentId.parent().mouseleave(function () {
+			contentId.parent('p').animate({'padding-top': '-=5px'}, dropTime);
+			contentId.animate({opacity: 'hide', height: 'hide'}, raiseTime);
+			$('#header-info').children('hr').removeClass('line-expand');
+			$('#header-info').children('hr').addClass('line-retract');
+		});
+	};
+
+	$('#about').click(function () {
+		dropSection($('#about-content'), 800, 800);
+	});
 	
 	// make lines expand
 	$('#myName, #header-info').hover(function () {

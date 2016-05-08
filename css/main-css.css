@@ -78,6 +78,16 @@ hr {
 	border-radius: 20%;
 }
 
+/* Resume section-specific attributes */
+#about-content {
+	display: none;
+	visibility: hidden;
+}
+
+#about-content p {
+	font-size: 18px;
+}
+
 /* Appendable Classes */
 .element-shadow {
 	transition: box-shadow 300ms;
