@@ -1,6 +1,6 @@
 /* Default Background/Body attributes */
 body {
-	background-color: #FDFFFE;
+	background-color: #FFFFFF;
 	text-align: center;
 }
 
@@ -39,11 +39,24 @@ hr {
 }
 
 #contact-info {
+	display: none;
 	margin: 5px auto 0;
 }
 
 #contact-info p {
 	font-size: 16px;
+	display: inline-block;
+}
+
+#project-info {
+	display: none;
+	margin: 5px auto 0;
+}
+
+#project-info a {
+	font-size: 17px;
+	color: black;
+	text-decoration: none;
 	display: inline-block;
 }
 
@@ -68,7 +81,7 @@ hr {
 /* Appendable Classes */
 .element-shadow {
 	transition: box-shadow 300ms;
-	box-shadow: 0 8px 6px -6px #888888;
+	box-shadow: 0 6px 6px -6px #888888;
 }
 
 .element-shadow-reverse {
