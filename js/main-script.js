@@ -75,7 +75,16 @@ $(document).ready(function() {
 			raiseUp($('#skills div'), 800);
 		}
 		skills_flag = !skills_flag;
-	})
+	});
+
+	$('#experience').click(function () {
+		if (experience_flag) {
+			dropDown($('#experience div'), 800);
+		} else {
+			raiseUp($('#experience div'), 800);
+		}
+		experience_flag = !experience_flag;
+	});
 	
 	// make lines expand
 	$('#myName, #header-info').hover(function () {
@@ -94,7 +103,7 @@ $(document).ready(function() {
 		$(this).children('hr').addClass('line-retract');
 	});
 
-	$('#end-section').hover(function () {
+	$('#experience').hover(function () {
 		$(this).children('hr').removeClass('ghost-line-retract');
 		$(this).children('hr').addClass('line-expand');
 	}, function () {
