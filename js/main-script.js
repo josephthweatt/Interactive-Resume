@@ -1,8 +1,8 @@
 //resume-section event flags
-var about_flag = false;
-var education_flag = false;
-var skills_flag = false;
-var experience_flag = false;
+var about_flag = true;
+var education_flag = true;
+var skills_flag = true;
+var experience_flag = true;
 
 
 $(document).ready(function() {
@@ -67,6 +67,15 @@ $(document).ready(function() {
 		}
 		education_flag = !education_flag;
 	});
+	
+	$('#skills').click(function () {
+		if (skills_flag) {
+			dropDown($('#skills div'), 800);
+		} else {
+			raiseUp($('#skills div'), 800);
+		}
+		skills_flag = !skills_flag;
+	})
 	
 	// make lines expand
 	$('#myName, #header-info').hover(function () {
