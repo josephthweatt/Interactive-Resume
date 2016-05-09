@@ -78,8 +78,8 @@ hr {
 	cursor: hand;
 	font-size: 26px;
 	margin: 5px auto 0;
+	width: 500px;
 	display: inline-block;
-	border-radius: 20%;
 }
 
 .resume-content {

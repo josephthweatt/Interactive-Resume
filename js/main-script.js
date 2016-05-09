@@ -47,6 +47,10 @@ $(document).ready(function() {
 	$('#about').click(function () {
 		dropSection($('#about div'), 800, 800);
 	});
+
+	$('#education').click(function () {
+		dropSection($('#education div'), 800, 800);
+	});
 	
 	// make lines expand
 	$('#myName, #header-info').hover(function () {
