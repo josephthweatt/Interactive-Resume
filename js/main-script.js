@@ -38,13 +38,15 @@ $(document).ready(function() {
 	var dropDown = function (contentId, dropTime) {
 		contentId.children('hr').removeClass('ghost-line-retract');
 		contentId.children('hr').addClass('line-expand element-shadow');
+		contentId.prev().removeClass('section-title');
+		contentId.prev().addClass('section-title-focused');
 		contentId.css("visibility", "visible");
-		contentId.parent('p').animate({'margin-top': '+=5px'}, dropTime);
 		contentId.animate({opacity: 'show', height: 'show'}, dropTime);
 	};
 
 	var raiseUp = function (contentId, raiseTime) {
-		contentId.parent('p').animate({'padding-top': '-=5px'}, raiseTime);
+		contentId.prev().removeClass('section-title-focused');
+		contentId.prev().addClass('section-title');
 		contentId.animate({opacity: 'hide', height: 'hide'}, raiseTime);
 		$(this).children('hr').removeClass('line-expand');
 		$(this).children('hr').addClass('line-retract');
@@ -52,45 +54,45 @@ $(document).ready(function() {
 
 	$('#about').click(function () {
 		if (about_flag) {
-			dropDown($('#about div'), 800);
+			dropDown($('#about .resume-content'), 800);
 		} else {
-			raiseUp($('#about div'), 800);
+			raiseUp($('#about .resume-content'), 800);
 		}
 		about_flag = !about_flag;
 	});
 
 	$('#education').click(function () {
 		if (education_flag) {
-			dropDown($('#education div'), 800);
+			dropDown($('#education .resume-content'), 800);
 		} else {
-			raiseUp($('#education div'), 800);
+			raiseUp($('#education .resume-content'), 500);
 		}
 		education_flag = !education_flag;
 	});
 	
 	$('#skills').click(function () {
 		if (skills_flag) {
-			dropDown($('#skills div'), 800);
+			dropDown($('#skills .resume-content'), 800);
 		} else {
-			raiseUp($('#skills div'), 800);
+			raiseUp($('#skills .resume-content'), 800);
 		}
 		skills_flag = !skills_flag;
 	});
 
 	$('#academic').click(function () {
 		if (academic_flag) {
-			dropDown($('#academic div'), 800);
+			dropDown($('#academic .resume-content'), 800);
 		} else {
-			raiseUp($('#academic div'),800);
+			raiseUp($('#academic .resume-content'),800);
 		}
 		academic_flag = !academic_flag;
 	});
 
 	$('#experience').click(function () {
 		if (experience_flag) {
-			dropDown($('#experience div'), 800);
+			dropDown($('#experience .resume-content'), 800);
 		} else {
-			raiseUp($('#experience div'), 800);
+			raiseUp($('#experience .resume-content'), 800);
 		}
 		experience_flag = !experience_flag;
 	});
@@ -112,6 +114,7 @@ $(document).ready(function() {
 		}
 	}
 	$('#myName, #header-info').hover(function () {
+
 		$('#header-info').children('hr').removeClass('line-retract');
 		$('#header-info').children('hr').addClass('line-expand');
 	}, function () {
@@ -120,20 +123,28 @@ $(document).ready(function() {
 	});
 
 	$('.resume-section').hover(function () {
+		$(this).children('p').removeClass('section-title');
+		$(this).children('p').addClass('section-title-focused');
 		$(this).children('hr').removeClass('line-retract');
 		$(this).children('hr').addClass('line-expand');
 	}, function () {
 		if (thisIsNotOpen($(this).attr('id'))) {
+			$(this).children('p').removeClass('section-title-focused');
+			$(this).children('p').addClass('section-title');
 			$(this).children('hr').removeClass('line-expand');
 			$(this).children('hr').addClass('line-retract');
 		}
 	});
 
 	$('#experience').hover(function () {
+		$(this).children('p').removeClass('section-title');
+		$(this).children('p').addClass('section-title-focused');
 		$(this).children('hr').removeClass('ghost-line-retract');
 		$(this).children('hr').addClass('line-expand');
 	}, function () {
 		if (thisIsNotOpen($(this).attr('id'))) {
+			$(this).children('p').removeClass('section-title-focused');
+			$(this).children('p').addClass('section-title');
 			$(this).children('hr').removeClass('line-expand');
 			$(this).children('hr').addClass('ghost-line-retract');
 		}

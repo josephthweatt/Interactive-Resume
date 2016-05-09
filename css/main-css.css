@@ -106,6 +106,16 @@ td {
 	visibility: hidden;
 }
 
+.section-title {
+	transition: color 300ms;
+	color: #BBBBBB;
+}
+
+.section-title-focused {
+	transition: color 300ms;
+	color: black;
+}
+
 /* Resume section-specific attributes */
 #skills-list p {
 	cursor: default;
