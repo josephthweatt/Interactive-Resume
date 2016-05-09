@@ -1,3 +1,9 @@
+//resume-section event flags
+var about_flag = false;
+var education_flag = false;
+var skills_flag = false;
+var experience_flag = false;
+
 
 $(document).ready(function() {
 	// intro fades
@@ -28,28 +34,38 @@ $(document).ready(function() {
 		});
 	});
 
-	// resume drop downs (will borrow from the dropSection function)
-	var dropSection = function (contentId, dropTime, raiseTime) {
+	// resume drop downs (will toggle the dropDown/raiseUp functions)
+	var dropDown = function (contentId, dropTime) {
 		contentId.children('hr').removeClass('ghost-line-retract');
 		contentId.children('hr').addClass('line-expand');
 		contentId.css("visibility", "visible");
 		contentId.parent('p').animate({'margin-top': '+=5px'}, dropTime);
 		contentId.animate({opacity: 'show', height: 'show'}, dropTime);
+	};
 
-		contentId.parent().mouseleave(function () {
-			contentId.parent('p').animate({'padding-top': '-=5px'}, dropTime);
-			contentId.animate({opacity: 'hide', height: 'hide'}, raiseTime);
-			$('#header-info').children('hr').removeClass('line-expand');
-			$('#header-info').children('hr').addClass('line-retract');
-		});
+	var raiseUp = function (contentId, raiseTime) {
+		contentId.parent('p').animate({'padding-top': '-=5px'}, raiseTime);
+		contentId.animate({opacity: 'hide', height: 'hide'}, raiseTime);
+		$(this).children('hr').removeClass('line-expand');
+		$(this).children('hr').addClass('line-retract');
 	};
 
 	$('#about').click(function () {
-		dropSection($('#about div'), 800, 800);
+		if (about_flag) {
+			dropDown($('#about div'), 800);
+		} else {
+			raiseUp($('#about div'), 800);
+		}
+		about_flag = !about_flag;
 	});
 
 	$('#education').click(function () {
-		dropSection($('#education div'), 800, 800);
+		if (education_flag) {
+			dropDown($('#education div'), 800);
+		} else {
+			raiseUp($('#education div'), 800);
+		}
+		education_flag = !education_flag;
 	});
 	
 	// make lines expand
