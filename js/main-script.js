@@ -2,6 +2,7 @@
 var about_flag = true;
 var education_flag = true;
 var skills_flag = true;
+var academic_flag = true;
 var experience_flag = true;
 
 $(document).ready(function() {
@@ -36,7 +37,7 @@ $(document).ready(function() {
 	// resume drop downs (will toggle the dropDown/raiseUp functions)
 	var dropDown = function (contentId, dropTime) {
 		contentId.children('hr').removeClass('ghost-line-retract');
-		contentId.children('hr').addClass('line-expand');
+		contentId.children('hr').addClass('line-expand element-shadow');
 		contentId.css("visibility", "visible");
 		contentId.parent('p').animate({'margin-top': '+=5px'}, dropTime);
 		contentId.animate({opacity: 'show', height: 'show'}, dropTime);
@@ -76,6 +77,15 @@ $(document).ready(function() {
 		skills_flag = !skills_flag;
 	});
 
+	$('#academic').click(function () {
+		if (academic_flag) {
+			dropDown($('#academic div'), 800);
+		} else {
+			raiseUp($('#academic div'),800);
+		}
+		academic_flag = !academic_flag;
+	});
+
 	$('#experience').click(function () {
 		if (experience_flag) {
 			dropDown($('#experience div'), 800);
@@ -95,6 +105,8 @@ $(document).ready(function() {
 				return education_flag;
 			case 'skills':
 				return skills_flag;
+			case 'academic':
+				return academic_flag;
 			case 'experience':
 				return experience_flag;
 		}
