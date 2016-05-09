@@ -12,7 +12,7 @@ $(document).ready(function() {
 	$('#resume').hide().fadeIn(3500);
 
 	// element shading
-	$('#header-info p').hover(function () {
+	$('#header-info p, a').hover(function () {
 		$(this).addClass('element-shadow');
 	}, function () {
 		$(this).removeClass('element-shadow');
@@ -32,6 +32,14 @@ $(document).ready(function() {
 		$('#myName, #header-info').mouseleave(function () {
 			$('#project-info').animate({opacity: 'hide', height: 'hide'}, 800);
 		});
+	});
+
+	$('#contact-info').hover(function () {
+		$('#contact-info').animate({opacity: 'show', height: 'show'}, 600);
+	});
+
+	$('#project-info').hover(function () {
+		$('#project-info').animate({opacity: 'show', height: 'show'}, 800);
 	});
 
 	// resume drop downs (will toggle the dropDown/raiseUp functions)
@@ -113,7 +121,7 @@ $(document).ready(function() {
 				return experience_flag;
 		}
 	}
-	$('#myName, #header-info').hover(function () {
+	$('#myName, #header-info, #contact-info, #project-info').hover(function () {
 
 		$('#header-info').children('hr').removeClass('line-retract');
 		$('#header-info').children('hr').addClass('line-expand');
