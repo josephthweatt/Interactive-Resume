@@ -1,9 +1,8 @@
-//resume-section event flags
+//resume-section event flags (true if closed)
 var about_flag = true;
 var education_flag = true;
 var skills_flag = true;
 var experience_flag = true;
-
 
 $(document).ready(function() {
 	// intro fades
@@ -86,7 +85,20 @@ $(document).ready(function() {
 		experience_flag = !experience_flag;
 	});
 	
-	// make lines expand
+	/******************** make lines expand ***************************/
+	// check if a tab is open before we retract a line
+	var thisIsNotOpen = function (sectionId) {
+		switch (sectionId) {
+			case 'about':
+				return about_flag;
+			case 'education':
+				return education_flag;
+			case 'skills':
+				return skills_flag;
+			case 'experience':
+				return experience_flag;
+		}
+	}
 	$('#myName, #header-info').hover(function () {
 		$('#header-info').children('hr').removeClass('line-retract');
 		$('#header-info').children('hr').addClass('line-expand');
@@ -99,15 +111,19 @@ $(document).ready(function() {
 		$(this).children('hr').removeClass('line-retract');
 		$(this).children('hr').addClass('line-expand');
 	}, function () {
-		$(this).children('hr').removeClass('line-expand');
-		$(this).children('hr').addClass('line-retract');
+		if (thisIsNotOpen($(this).attr('id'))) {
+			$(this).children('hr').removeClass('line-expand');
+			$(this).children('hr').addClass('line-retract');
+		}
 	});
 
 	$('#experience').hover(function () {
 		$(this).children('hr').removeClass('ghost-line-retract');
 		$(this).children('hr').addClass('line-expand');
 	}, function () {
-		$(this).children('hr').removeClass('line-expand');
-		$(this).children('hr').addClass('ghost-line-retract');
+		if (thisIsNotOpen($(this).attr('id'))) {
+			$(this).children('hr').removeClass('line-expand');
+			$(this).children('hr').addClass('ghost-line-retract');
+		}
 	});
 });

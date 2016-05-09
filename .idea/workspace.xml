@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a59372c5-beaf-4ab5-b970-a30bc7a8ec34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Joseph.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main-css.css" afterPath="$PROJECT_DIR$/css/main-css.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main-script.js" afterPath="$PROJECT_DIR$/js/main-script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume.html" afterPath="$PROJECT_DIR$/resume.html" />
     </list>
     <ignored path="Interactive Resume.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +27,7 @@
       <file leaf-file-name="resume.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resume.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
+            <state relative-caret-position="1159">
               <caret line="168" column="86" selection-start-line="168" selection-start-column="86" selection-end-line="168" selection-end-column="86" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -68,8 +65,8 @@
       <file leaf-file-name="main-script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main-script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
+            <state relative-caret-position="497">
+              <caret line="126" column="9" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -83,9 +80,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/main-script.js" />
         <option value="$PROJECT_DIR$/css/main-css.css" />
         <option value="$PROJECT_DIR$/resume.html" />
+        <option value="$PROJECT_DIR$/js/main-script.js" />
       </list>
     </option>
   </component>
@@ -253,12 +250,12 @@
       <updated>1462687182286</updated>
       <workItem from="1462687184554" duration="19995000" />
       <workItem from="1462732156628" duration="3891000" />
-      <workItem from="1462749158178" duration="22417000" />
+      <workItem from="1462749158178" duration="24548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46303000" />
+    <option name="totallyTimeSpent" value="48434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -393,7 +390,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resume.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
+        <state relative-caret-position="1159">
           <caret line="168" column="86" selection-start-line="168" selection-start-column="86" selection-end-line="168" selection-end-column="86" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -419,8 +416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main-script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
+        <state relative-caret-position="497">
+          <caret line="126" column="9" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
           <folding />
         </state>
       </provider>
