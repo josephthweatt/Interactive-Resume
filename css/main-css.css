@@ -34,6 +34,10 @@ td {
 
 
 /* Heading attributes */
+#resume-header {
+	text-align: center;
+}
+
 #myName {
 	display: inline-block;
 	margin: 100px auto 0; /* 100px from top, no margin below */
