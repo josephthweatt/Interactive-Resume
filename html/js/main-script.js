@@ -34,14 +34,6 @@ $(document).ready(function() {
 		});
 	});
 
-	$('#contact-info').hover(function () {
-		$('#contact-info').animate({opacity: 'show', height: 'show'}, 600);
-	});
-
-	$('#project-info').hover(function () {
-		$('#project-info').animate({opacity: 'show', height: 'show'}, 800);
-	});
-
 	// resume drop downs (will toggle the dropDown/raiseUp functions)
 	var dropDown = function (contentId, dropTime) {
 		contentId.children('hr').removeClass('ghost-line-retract');
@@ -51,7 +43,6 @@ $(document).ready(function() {
 		contentId.css("visibility", "visible");
 		contentId.animate({opacity: 'show', height: 'show'}, dropTime);
 	};
-
 	var raiseUp = function (contentId, raiseTime) {
 		contentId.prev().removeClass('section-title-focused');
 		contentId.prev().addClass('section-title');
@@ -59,6 +50,7 @@ $(document).ready(function() {
 		$(this).children('hr').removeClass('line-expand');
 		$(this).children('hr').addClass('line-retract');
 	};
+
 
 	$('#about').click(function () {
 		if (about_flag) {
@@ -106,7 +98,8 @@ $(document).ready(function() {
 	});
 	
 	/******************** make lines expand ***************************/
-	// check if a tab is open before we retract a line
+	// check if a tab is open before we retract a line 
+	// this is implemented in the methods following it
 	var thisIsNotOpen = function (sectionId) {
 		switch (sectionId) {
 			case 'about':
@@ -121,6 +114,8 @@ $(document).ready(function() {
 				return experience_flag;
 		}
 	}
+
+	// line animation for the head of the website (Name, contact, project)
 	$('#myName, #header-info, #contact-info, #project-info').hover(function () {
 
 		$('#header-info').children('hr').removeClass('line-retract');
@@ -144,6 +139,7 @@ $(document).ready(function() {
 		}
 	});
 
+	// this method added for the special line at the bottom of the page
 	$('#experience').hover(function () {
 		$(this).children('p').removeClass('section-title');
 		$(this).children('p').addClass('section-title-focused');
