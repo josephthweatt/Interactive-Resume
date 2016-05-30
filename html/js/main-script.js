@@ -36,6 +36,10 @@ $(document).ready(function() {
 
 	// resume drop downs (will toggle the dropDown/raiseUp functions)
 	var dropDown = function (contentId, dropTime) {
+		contentId.stop(true);
+		contentId.children('hr').stop(true);
+		contentId.prev().stop(true);
+
 		contentId.children('hr').removeClass('ghost-line-retract');
 		contentId.children('hr').addClass('line-expand element-shadow');
 		contentId.prev().removeClass('section-title');
@@ -44,6 +48,10 @@ $(document).ready(function() {
 		contentId.animate({opacity: 'show', height: 'show'}, dropTime);
 	};
 	var raiseUp = function (contentId, raiseTime) {
+		contentId.stop(true);
+		$(this).children('hr').stop(true);
+		contentId.prev().stop(true);
+
 		contentId.prev().removeClass('section-title-focused');
 		contentId.prev().addClass('section-title');
 		contentId.animate({opacity: 'hide', height: 'hide'}, raiseTime);
