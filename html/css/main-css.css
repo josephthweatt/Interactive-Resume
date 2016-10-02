@@ -128,8 +128,8 @@ td {
 }
 
 /* Resume section-specific attributes */
-#skills-list p {
-	cursor: default;
+#skills ul {
+	text-align: left
 }
 
 .employer-date p {
