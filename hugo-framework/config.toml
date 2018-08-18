@@ -1,6 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "http://jathweatt.com:1313/"
 languageCode = "en-us"
-title = "Joseph Thweatt\nSoftware Engineer"
+title = "Joseph Thweatt"
 theme = "ananke"
-
-disqusShortname = JOSEPH_THWEATT
