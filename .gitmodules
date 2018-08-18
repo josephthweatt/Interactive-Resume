@@ -1,0 +1,6 @@
+[submodule "hugo-framework/themes/minimal-academic"]
+	path = hugo-framework/themes/minimal-academic
+	url = https://github.com/jhu724/minimal-academic.git
+[submodule "hugo-framework/themes/ananke"]
+	path = hugo-framework/themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git

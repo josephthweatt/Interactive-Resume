@@ -1,0 +1,6 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Joseph Thweatt\nSoftware Engineer"
+theme = "ananke"
+
+disqusShortname = JOSEPH_THWEATT
