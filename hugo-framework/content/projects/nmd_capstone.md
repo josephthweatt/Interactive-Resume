@@ -1,5 +1,6 @@
 ---
 date: 2017-08-15T14:30:31-07:00
+description: "Designed an inventory system for the humanitarian organization No More Deaths"
 featured_image: "images/sonoran-sunset.jpg"
 title: "Capstone Project: No More Deaths"
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2017-05-15T11:13:32-04:00
 featured_image: "images/connexta-office.jpg"
+description: "Worked in a team to create features, fixes, and improvements on the Distributed Data Framework."
 title: "Connexta"
 ---
 _Worked in a team to create features, fixes, and improvements on the Distributed Data Framework._

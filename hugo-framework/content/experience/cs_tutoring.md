@@ -1,5 +1,6 @@
 ---
 date: 2017-01-01T11:13:32-04:00
+description: "Assisted undergraduate students in understanding core computer science concepts"
 featured_image: "images/brickyard-exterior.png"
 title: "Computer Science Tutor"
 ---

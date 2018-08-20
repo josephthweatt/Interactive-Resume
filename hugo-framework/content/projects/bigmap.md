@@ -1,5 +1,6 @@
 ---
 date: 2016-05-15T13:15:54-07:00
+description: "Created an application to allow users to broadcast their location amongst a shared group"
 featured_image: "images/nautical-chart.jpg"
 title: "BigMap"
 ---

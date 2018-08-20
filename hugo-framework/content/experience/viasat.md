@@ -1,5 +1,6 @@
 ---
 date: 2018-05-20T00:22:29-07:00
+description: "Worked on projects important to the Commercial Mobility Department"
 featured_image: "images/viasat-tempe.png"
 title: "ViaSat"
 ---

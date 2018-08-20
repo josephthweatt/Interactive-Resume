@@ -1,5 +1,6 @@
 ---
 date: 2016-01-12T13:49:28-07:00
+description: "Created an application to determine an ideal Solar Panel setup based on a user's need and location"
 featured_image: "images/solar-panels.png"
 title: "OPSRA"
 ---
