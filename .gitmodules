@@ -1,3 +1,6 @@
 [submodule "hugo-framework/themes/ananke"]
 	path = hugo-framework/themes/ananke
 	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "public"]
+	path = public
+	url = https://github.com/josephthweatt/josephthweatt.github.io
