@@ -35,7 +35,7 @@
     "deep-extend": "0.5.1",
     "fstream": "1.0.12",
     "hoek": "4.2.1",
-    "lodash": "4.17.11",
+    "lodash": "4.17.21",
     "macaddress": "0.2.9",
     "randomatic": "3.0.0",
     "sshp": "^0.4.5",
